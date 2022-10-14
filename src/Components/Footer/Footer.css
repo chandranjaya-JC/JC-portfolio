@@ -1,0 +1,188 @@
+.footer{
+    margin-bottom: 0;
+}
+.footer{
+    background-image: url(../../../src/Assets/wave.png);
+    background-color: rgb(255, 231, 199);
+    height: auto;
+    width: 100%;
+    position:sticky;
+    margin-top: 2rem;
+    
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.footer__container h1{
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
+
+}
+.footer__container__location h1{
+
+}
+
+/* ======================= LOCATION ======================= */
+.footer__container__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:3rem ;
+    margin-top: 1.2rem;
+    color:aliceblue;
+}
+
+.footer__container__location__map{
+    height: 18rem;
+    width: 18rem;
+    opacity: .8;
+    box-shadow: 2px 2px 2px 2px #f4f3f3;
+}
+
+
+
+/* =================== MENU ====================== */
+.footer__container__menu{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem; 
+    color:rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    
+}
+.footer__container__menu__div{
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0 2rem 1rem;
+}
+.menu-listlink{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: black;
+}
+.menu-listicons{
+    margin: 1rem .5rem 0 0rem;
+}
+.menu-listlink:hover{
+color: #f4f3f3;
+font-size: 1.25rem;
+}
+/* ===================SOCIALS ====================== */
+.footer__container__socials a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 0;
+
+}
+
+.footer__container__socials h1{
+    color:aliceblue;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.footer__container__socials a:hover{
+    color: rgb(255, 187, 187);
+    font-size: 1.5rem;
+}
+/* ============================= POWERED BY ========================== */
+.powered__by{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    font-size: 20px;
+    position: sticky;
+    bottom: 1rem;
+    z-index: 5;
+    right: 0;
+    bottom: 3rem;
+}
+.powered__by h1{
+    font-size: 15px;
+    font-weight: 200;
+    bottom: 2rem;
+    padding-top: .4rem;
+}
+.powered__by span{
+    background: url(../../Assets/JCwebplotlogo11.png);
+    z-index: 6;
+}
+.powered__by  img{
+    height: 2rem;
+    width:2rem;
+    margin-left:.3rem;
+}
+/* ============================= MEDIA QUERIES ========================== */
+
+@media screen and (max-width :1024px){
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+
+    }
+    .footer__container__socials{
+        margin: 3.5rem 2rem 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .footer__container__socials a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        padding:.8rem;
+
+    }
+    .powered__by{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        font-size: 20px;
+        z-index: 5;
+        right: 0;
+        bottom: 0rem;
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width : 700px){
+    .footer__container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .footer__container__socials{
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    .footer__container__socials a{
+        font-size: 1.2rem;
+        padding:.8rem;
+        margin-bottom: 1rem;
+    }
+
+
+}

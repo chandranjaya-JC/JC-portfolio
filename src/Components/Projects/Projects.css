@@ -1,0 +1,76 @@
+#portfolio{
+margin-top: 4rem;    
+width: 100%;
+}
+.portfolio__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 2.5rem;
+    width: var(--container-width-lg);
+    margin: auto;
+    margin-top: 1rem;
+    height:auto; 
+    width:80%;
+}
+.portfolio__items{
+    width: 100%;
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.portfolio__items-image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.portfolio__items-image img{
+    width: 100%;
+    border-radius: 2rem;
+    margin: auto;
+}
+.portfolio__items:hover{
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+.portfolio__items h3{
+    margin: 1rem 0 2rem 0rem;
+}
+.portfolio__items-cta{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+.btn{
+    text-decoration: none;
+    margin:3rem 0 0rem rem;
+    display:
+    
+}
+/*---------------------- MEDIA QUERIES (MEDIUM DEVICES) --------------------*/
+@media screen and (max-width: 1224px){
+    .portfolio__container{
+        width:100%;
+    }
+}
+
+/*---------------------- MEDIA QUERIES (MEDIUM DEVICES) --------------------*/
+
+@media screen and (max-width: 1024px){
+    .portfolio__container{
+        grid-template-columns:  1fr 1fr;
+        gap: 1.2rem;
+        width:100%;
+    }
+    
+}
+/*---------------------- MEDIA QUERIES (MEDIUM DEVICES) --------------------*/
+
+@media screen and (max-width: 600px){
+    .portfolio__container{
+        grid-template-columns: 1fr;
+        width:90%;
+    }
+    
+}

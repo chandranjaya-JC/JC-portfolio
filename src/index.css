@@ -1,13 +1,84 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  scroll-behavior: smooth;
+  color:rgb(0, 0, 0);
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-bg : #1f1f38;
+  --color-bg-variant: #ffebb0;
+  --color-primary: rgba(240, 126, 55, 0.721);
+  --color-primary-variant: rgba(183, 219, 244, 0.4);
+  --color-white: rgb(240, 126, 55);
+  --color-light: rgba(239, 174, 78, 0.6);
+
+  --transition : all 400ms ease;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 100%;
 }
+
+
+/* ================================= GENERAL STYLES ================================= */
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+section > h2, section > h5{
+  text-align: center;
+  color: var(--color-bg);
+  margin:1rem 0rem;
+  font-size: 1.3rem;
+}
+section > h2{
+  margin: 1.5rem 0rem;
+  font-size: 2rem;
+
+}
+
+.button {
+  background-color: rgba(255, 89, 10, 1);
+  color: rgb(255, 231, 199);
+  padding: .7rem ;
+  border-radius: 1.5rem;
+}
+.button:hover{
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/*---------------------- MEDIA QUERIES (MEDIUM DEVICES) --------------------*/
+
+@media screen and (max-width: 1024px){
+  .container{
+      width: var(--container-width-md)
+  }
+  section{
+      margin-bottom: 6rem;
+  }
+}
+
+/*---------------------- MEDIA QUERIES (SMALL DEVICES) --------------------*/
+
+@media screen and (max-width: 600px){
+  .container{
+      width: var(--container-width-sm)
+  }
+  section > h2{
+      margin-bottom: 6rem;
+  }
+}
+

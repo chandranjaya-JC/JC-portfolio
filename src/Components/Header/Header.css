@@ -1,0 +1,94 @@
+.header{
+    background-image: url(../../Assets/header.webp);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    position: relative;
+}
+
+.header__heading{
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    position: relative;
+    align-items: center;
+    font-weight: 400;
+    bottom: 3rem;   
+}
+.header__heading span{
+    color:rgb(240, 126, 55);
+    display: flex;
+    flex-direction: column;
+}
+.header__heading h1{
+    margin:  0rem 0 .8rem 0rem ;
+    
+}
+.header__heading h3{
+    margin:  0rem 0 1rem 0rem ;
+    
+}
+.header__heading span:hover{
+    color: var(--color-light);
+    
+}
+.header__container{
+    position: relative;
+    top:20%;
+    width: 70%;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__container .btn{
+    text-decoration: none;
+    width:55%;
+    margin:0rem 0 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------------------- MEDIA QUERIES (MEDIUM DEVICES) --------------------*/
+
+@media screen and (max-width: 1024px){
+    .header{
+        grid-template-columns:  1fr 1fr;
+        gap: 1.2rem;
+        width: 100%;
+        
+    }
+    .header__container{
+        width: 100%;
+    }
+    .header__container .btn{
+        width:50%;
+    }
+}
+/*---------------------- MEDIA QUERIES (SMALL DEVICES) --------------------*/
+
+@media screen and (max-width: 600px){
+    .header{
+        grid-template-columns: 100%;
+        width: 100%;
+        gap: 1rem;
+    }
+    .header__container{
+        width: 100%;
+        margin-left: 2rem;
+
+    }
+    .header__container .btn{
+        width:50%;
+
+        margin:0rem 0 1rem 1rem;
+        
+        
+    }
+    
+}
