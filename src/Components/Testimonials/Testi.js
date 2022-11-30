@@ -40,7 +40,7 @@ const data = [
 
 const Testi = () => {
   return (
-    <section>
+    <section >
       <h5>Review from client</h5>
       <h2>Testimonials</h2>
 

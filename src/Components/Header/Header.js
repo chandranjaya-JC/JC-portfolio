@@ -3,10 +3,12 @@ import './Header.css';
 import JCLOGO from '../../Assets/JCwebplotlogo11.png'
 import CV from '../../Assets/cv.pdf'
 import { Link } from 'react-router-dom';
+
 function Header() {
   return (
 
     <section className='header'>
+
       <div className='header__heading'>
         {/* <img src={JCLOGO} alt="logo"/> */}
         <h1>HI, I'M <span>JayaChandran</span></h1>
